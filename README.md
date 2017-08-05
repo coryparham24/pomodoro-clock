@@ -1,0 +1,1 @@
+Hello! In this project, I will be creating a Pomodoro Clock. This is from TheOdinProject's [curriculum](https://www.theodinproject.com/courses/web-development-101/lessons/pairing-project). Enjoy!
