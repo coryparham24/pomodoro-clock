@@ -3,9 +3,38 @@
 	<head>
 		<title>Pomodoro Clock</title>
 		<meta charset="UTF-8">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<link href="styles.css" rel="stylesheet">
 	</head>
+
 	<body>
+
+		<div class="header">
+			<h1>Pomodoro Clock</h1>
+			<p>The Pomodoro Technique is a time management system where you work for a period of time then take a short break, then work for a period of time then take a short break, and so on. Please choose how many minutes you would like to work and how long of a break you would like.</p>
+		</div>
+
+		<div class="timer">
+			<form>
+				Session: <br/>
+				<button type="button" id="session-decrease"><icon class="fa fa-caret-down"></button>
+				<input type="text" name="session" value="25" id="session">
+				<button type="button" id="session-increase"><icon class="fa fa-caret-up" ></button><br/><br/>
+				Break: <br/>
+				<button type="button" id="break-decrease"><icon class="fa fa-caret-down"></button>
+				<input type="text" name="break" value="5" id="break">
+				<button type="button" id="break-increase"><icon class="fa fa-caret-up"></button>
+			</form>
+
+			<div class="countdown">
+				<p id="break-or-session"></p>
+				<span id="counter"></span><br/>
+				<button type="button" id="play"><icon class="fa fa-play"></button>
+				<button type="button" id="pause"><icon class="fa fa-pause"></button>
+				<button type="button" id="stop"><icon class="fa fa-stop"></button>
+				<button type="button" id="refresh"><icon class="fa fa-refresh"></button>
+			</div>
+		</div>
 
 
 		<script
