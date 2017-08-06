@@ -135,10 +135,16 @@ $(document).ready(function() {
 	$('input#session').on('input', function() {
 		if (interval === null) {
 			setSession = parseInt($('input#session').val(), 10);
-			count = toSeconds(setSession);
-			$('input#session').val(setSession);
-			displayTime(toSeconds(setSession));
-		}
+			if (setSession > 0) {
+				count = toSeconds(setSession);
+				$('input#session').val(setSession);
+				displayTime(toSeconds(setSession));
+			} else if (setSession <= 0 || setSession === NaN) {
+				count = toSeconds(1);
+				$('input#session').val(1);
+				displayTime(toSeconds(1));
+			};
+		};
 	});
 
 	$('input#break').on('input', function() {
