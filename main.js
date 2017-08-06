@@ -56,7 +56,7 @@ $(document).ready(function() {
 					countdown(toSeconds(setSession));
 				};
 			};
-		}, 10);
+		}, 1000);
 	};
 
 	displayTime(toSeconds(setSession));
