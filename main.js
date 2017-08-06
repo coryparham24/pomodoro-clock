@@ -50,9 +50,13 @@ $(document).ready(function() {
 					$('p#break-or-session').text('Break:');
 					displayTime(toSeconds(setBreak));
 					countdown(toSeconds(setBreak));
+				} else if ($('p#break-or-session').text() === 'Break:') {
+					$('p#break-or-session').text('Session:');
+					displayTime(toSeconds(setSession));
+					countdown(toSeconds(setSession));
 				};
 			};
-		}, 1000);
+		}, 10);
 	};
 
 	displayTime(toSeconds(setSession));
